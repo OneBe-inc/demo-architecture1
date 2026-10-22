@@ -17,3 +17,7 @@ dialog{width:min(590px,calc(100% - 36px));max-height:85dvh;border:1px solid var(
 
 @media(max-width:899px){h1 span:first-child{margin-right:.12em}}
 @media(min-width:900px) and (max-height:720px){.material h2{font-size:4.2vw}}
+
+/* Keep the hero readable on short desktop windows. */
+@media(min-width:900px) and (max-height:720px){h1{font-size:clamp(62px,12vh,86px)}.jp-title{font-size:clamp(22px,4vh,30px)}.hero-sub{font-size:11px}.location{bottom:12%}}
+@media(min-width:900px) and (max-height:590px){h1{font-size:clamp(40px,10vh,59px)}.jp-title{font-size:21px;line-height:1.4;margin:10px 0 6px}.location{display:none}.hero-sub{font-size:10px}.hero-detail{bottom:3%;padding:7px 10px}.ceiling .hotspot-label{bottom:25px;left:65px}}

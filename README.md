@@ -18,7 +18,9 @@ Node.js 18以上で `npm start` → http://localhost:3000 。依存パッケー�
 
 Public repository: https://github.com/OneBe-inc/demo-architecture1
 
-GitHub Pages: Settings → Pages → Deploy from a branch → `main` / `/ (root)` を保存してください。ビルド不要です。公開される場合のURLは `https://onebe-inc.github.io/demo-architecture1/` です。コードの存在だけではPagesの有効化を意味しません。
+GitHub Pages公開URL: https://onebe-inc.github.io/demo-architecture1/
+
+公開設定: Deploy from a branch → `main` / `/ (root)`。ビルド不要で、mainへの変更は自動公開されます。
 
 ## デザイン・素材
 
