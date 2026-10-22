@@ -14,3 +14,6 @@ dialog{width:min(590px,calc(100% - 36px));max-height:85dvh;border:1px solid var(
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 @media(min-width:900px){.material .samples{left:2.4vw;right:30%;top:32%}.material .caption{left:54%;right:3%;max-width:none}.material h2{font-size:6.3vw}}
+
+@media(max-width:899px){h1 span:first-child{margin-right:.12em}}
+@media(min-width:900px) and (max-height:720px){.material h2{font-size:4.2vw}}
