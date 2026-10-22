@@ -30,12 +30,13 @@ function closeDialog(){dialog.close();}
 dialog.querySelector('.dialog-close').addEventListener('click',closeDialog);
 dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))closeDialog();});
 dialog.addEventListener('close',()=>returnFocus?.focus({preventScroll:true}));
-document.querySelectorAll('[data-service]').forEach(b=>b.addEventListener('click',()=>{const s=services[Number(b.dataset.service)];openDialog(`<p class="dialog-kicker">${s.en}</p><h2>${s.name}</h2><h3>${s.title}</h3><p>${s.body}</p><h3>相談前に整理しておきたいこと</h3><ul>${s.points.map(p=>`<li>${p}</li>`).join('')}</ul><button class="detail" id="dialog-contact">ブランドについて見る <span>↗</span></button><p class="notice">デザインデモのための一般的な工事紹介です。架空ブランドのデモであり、工事の受付は行っていません。</p>`);document.querySelector('#dialog-contact').addEventListener('click',showContact);}));
-function contactHTML(){return '<p class="dialog-kicker">SORANOWA INTERIOR / DESIGN DEMO</p><h2>株式会社ソラノワ内装</h2><p>壁・床・天井から、暮らしの心地よさを考える。<br>住宅内装をテーマにした架空のブランドです。</p><dl><dt>事業イメージ</dt><dd>軽天工事・天井内装仕上げ・壁張り工事・間仕切り工事・防音工事・畳、ふすまの工事</dd><dt>お問い合わせ</dt><dd>デモのため、受付は行っていません。</dd></dl><p class="notice">会社名・ブランドはこのデモのための架空設定です。実在する企業とは関係ありません。住所・電話番号・送信機能は設けていません。写真は生成画像であり、実際の施工事例ではありません。</p>';}
+
+function contactHTML(){return '<p class="dialog-kicker">ONEBE INTERIOR / DESIGN DEMO</p><h2>株式会社ワンビー内装</h2><p>壁・床・天井から、暮らしの心地よさを考える。<br>住宅内装をテーマにした架空のブランドです。</p><dl><dt>事業イメージ</dt><dd>軽天工事・天井内装仕上げ・壁張り工事・間仕切り工事・防音工事・畳、ふすまの工事</dd><dt>お問い合わせ</dt><dd>デモのため、受付は行っていません。</dd></dl><p class="notice">会社名・ブランドはこのデモのための架空設定です。実在する企業とは関係ありません。住所・電話番号・送信機能は設けていません。写真は生成画像であり、実際の施工事例ではありません。</p>';}
 function showContact(){if(dialog.open)content.innerHTML=contactHTML();else openDialog(contactHTML());}
 document.querySelectorAll('[data-contact]').forEach(b=>b.addEventListener('click',showContact));
 document.querySelector('[data-floor]').addEventListener('click',()=>openDialog('<p class="dialog-kicker">FLOOR / MATERIAL</p><h2>暮らしを支える、床の質感。</h2><p>色や素材、足触りによって、空間の心地よさは変わります。和の仕上げについては「畳・ふすまの工事」をご覧ください。</p><button class="detail" id="floor-next">畳・ふすまの工事へ →</button><p class="notice">写真は住宅内装のイメージです。</p>'));
 content.addEventListener('click',e=>{if(e.target.closest('#floor-next')){dialog.close();go(5);}});
-document.querySelector('[data-menu]').addEventListener('click',()=>{openDialog(`<p class="dialog-kicker">SORANOWA INTERIOR / INDEX</p><h2>空間をつくる、6つの仕事。</h2><div class="menu-links">${services.map((s,i)=>`<button data-menu-go="${i}"><span>0${i+1}</span>${s.name}</button>`).join('')}</div>`);content.querySelectorAll('[data-menu-go]').forEach(b=>b.addEventListener('click',()=>{dialog.close();go(Number(b.dataset.menuGo));}));});
+document.addEventListener('service-navigate',e=>{go(e.detail);explorer.focus({preventScroll:true});});
+
 function fromHash(){const m=location.hash.match(/^#service-([1-6])$/);if(m)go(Number(m[1])-1,false);}
 addEventListener('hashchange',fromHash);requestAnimationFrame(fromHash);

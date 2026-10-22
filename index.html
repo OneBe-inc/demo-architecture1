@@ -3,26 +3,36 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f1f3f0">
-  <title>SORANOWA INTERIOR — 空間は、もっと自由だ。</title>
-  <meta name="description" content="株式会社ソラノワ内装のデザインコンセプト。壁・床・天井から、心地よい空間を考える。">
+  <title>ONEBE INTERIOR — 空間は、もっと自由だ。</title>
+  <meta name="description" content="株式会社ワンビー内装のデザインコンセプト。壁・床・天井から、心地よい空間を考える。">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/anton.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/living-room.jpg" as="image">
-  <link rel="stylesheet" href="styles.css?v=unified-1"><script src="app.js?v=unified-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=menu-2"><script src="app.js?v=menu-2" defer></script><script src="menu.js?v=menu-2" defer></script>
 </head>
 <body>
   <a class="skip" href="#explorer">コンテンツへ</a>
   <aside class="rail" aria-label="サイトメニュー">
-    <a class="monogram" href="#service-1" aria-label="ソラノワ内装 トップ"><span>S</span><i></i><span>I</span></a>
-    <div class="rail-line"></div><span class="rail-name">SORANOWA INTERIOR</span>
-    <button class="menu-button" data-menu aria-label="メニューを開く">MENU<span>＋</span></button>
+    <a class="monogram" href="#service-1" aria-label="ワンビー内装 トップ"><span>O</span><i></i><span>I</span></a>
+    <div class="rail-line"></div><span class="rail-name">ONEBE INTERIOR</span>
+    <button class="menu-button" data-menu aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">MENU<span>＋</span></button>
     <button class="rail-next" data-next aria-label="次のサービスへ">→</button>
   </aside>
   <header class="header">
-    <a class="brand" href="#service-1">株式会社ソラノワ内装</a>
+    <a class="brand" href="#service-1">株式会社ワンビー内装</a>
     <span class="header-index">SPACE EXPLORER&nbsp; / &nbsp;01 — 06</span>
+    <button class="mobile-menu" data-menu aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">MENU <span aria-hidden="true">＋</span></button>
     <button class="contact" data-contact>工事の相談 <span>↗</span></button>
   </header>
+  <button class="menu-shade" tabindex="-1" aria-label="メニューを閉じる" hidden></button>
+  <nav id="site-menu" class="site-menu" aria-label="サイトナビゲーション" aria-hidden="true" inert>
+    <div class="menu-inner">
+      <div class="menu-topline"><span>ONEBE INTERIOR / INDEX</span><button class="menu-close" aria-label="メニューを閉じる">CLOSE <span aria-hidden="true">×</span></button></div>
+      <h2 class="menu-title">EXPLORE<span>空間をつくる、6つの仕事。</span></h2>
+      <div class="drawer-links"></div>
+      <p class="menu-end">YOUR SPACE. YOUR POSSIBILITIES. <span>01 — 06</span></p>
+    </div>
+  </nav>
   <main id="explorer" class="explorer" tabindex="0" aria-label="6つの内装サービス。左右キーで移動できます">
     <section id="service-1" class="chapter scene scene-1" aria-labelledby="title-1" style="--photo-position:57% center">
       <img class="scene-photo" src="assets/living-room.jpg" alt="自然光と木の質感が心地よい住宅内装のイメージ" fetchpriority="high" draggable="false">
@@ -31,12 +41,12 @@
         <p class="scene-eyebrow"><b>01</b><span>軽天工事</span><i>/ LIGHT GAUGE STEEL</i></p>
         <h1 class="scene-heading" id="title-1"><span>SPACE</span><span>IS</span><span>EDITABLE.</span></h1>
         <p class="scene-jp">空間は、<br>もっと自由だ。</p>
-        <p class="scene-desc">壁・床・天井を仕上げる、ソラノワ内装。</p>
-        <button class="detail scene-detail" data-service="0">軽天工事について <span>↗</span></button>
+        <p class="scene-desc">壁・床・天井を仕上げる、ワンビー内装。</p>
+        <a class="detail scene-detail" href="services/light-gauge.html">軽天工事について <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="0"><span class="target"></span><span class="point-label"><small>ROOM / INTERIOR</small><strong>暮らしの、その先へ。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/light-gauge.html"><span class="target"></span><span class="point-label"><small>ROOM / INTERIOR</small><strong>暮らしの、その先へ。</strong><b>↗</b></span></a>
       <button class="hotspot ceiling" data-go="1" aria-label="天井内装仕上げを見る"><span class="target"></span><span class="spot-name">CEILING</span></button><button class="hotspot floor" data-floor aria-label="床の仕上げについて"><span class="target"></span><span class="spot-name">FLOOR</span></button>
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 01 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 01 — 06</p>
     </section>
     <section id="service-2" class="chapter scene scene-2" aria-labelledby="title-2" style="--photo-position:58% 18%">
       <img class="scene-photo" src="assets/living-room.jpg" alt="自然光と木の質感が心地よい住宅内装のイメージ" loading="lazy" draggable="false">
@@ -46,11 +56,11 @@
         <h2 class="scene-heading" id="title-2"><span>LOOK</span><span>UP.</span><span>FEEL GOOD.</span></h2>
         <p class="scene-jp">見上げる景色まで、<br>心地よく。</p>
         <p class="scene-desc">光を受け止める色、奥行きを生む質感。<br>天井から、空間の印象を整える。</p>
-        <button class="detail scene-detail" data-service="1">天井内装仕上げについて <span>↗</span></button>
+        <a class="detail scene-detail" href="services/ceiling.html">天井内装仕上げについて <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="1"><span class="target"></span><span class="point-label"><small>LIGHT / CEILING</small><strong>光と、余白をつくる。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/ceiling.html"><span class="target"></span><span class="point-label"><small>LIGHT / CEILING</small><strong>光と、余白をつくる。</strong><b>↗</b></span></a>
       
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 02 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 02 — 06</p>
     </section>
     <section id="service-3" class="chapter scene scene-3" aria-labelledby="title-3" style="--photo-position:30% center">
       <img class="scene-photo" src="assets/living-room.jpg" alt="自然光と木の質感が心地よい住宅内装のイメージ" loading="lazy" draggable="false">
@@ -60,11 +70,11 @@
         <h2 class="scene-heading" id="title-3"><span>WALLS</span><span>CHANGE</span><span>EVERYDAY.</span></h2>
         <p class="scene-jp">一枚の壁で、<br>空間が変わる。</p>
         <p class="scene-desc">クロスの色、木の表情、触れたときの質感。<br>暮らしに似合う仕上げを考える。</p>
-        <button class="detail scene-detail" data-service="2">壁張り工事について <span>↗</span></button>
+        <a class="detail scene-detail" href="services/wall.html">壁張り工事について <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="2"><span class="target"></span><span class="point-label"><small>TEXTURE / WALL</small><strong>壁に、暮らしの表情を。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/wall.html"><span class="target"></span><span class="point-label"><small>TEXTURE / WALL</small><strong>壁に、暮らしの表情を。</strong><b>↗</b></span></a>
       
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 03 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 03 — 06</p>
     </section>
     <section id="service-4" class="chapter scene scene-4" aria-labelledby="title-4" style="--photo-position:left center">
       <img class="scene-photo" src="assets/tatami.jpg" alt="木と畳、ふすまが調和する明るい和室のイメージ" loading="lazy" draggable="false">
@@ -74,11 +84,11 @@
         <h2 class="scene-heading" id="title-4"><span>MAKE</span><span>ROOM FOR</span><span>MORE.</span></h2>
         <p class="scene-jp">仕切ることで、<br>広がる使い方。</p>
         <p class="scene-desc">動線、光、これからの暮らし。<br>空間のつながりを、もう一度デザインする。</p>
-        <button class="detail scene-detail" data-service="3">間仕切り工事について <span>↗</span></button>
+        <a class="detail scene-detail" href="services/partition.html">間仕切り工事について <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="3"><span class="target"></span><span class="point-label"><small>FLOW / PARTITION</small><strong>つながりを、仕立てる。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/partition.html"><span class="target"></span><span class="point-label"><small>FLOW / PARTITION</small><strong>つながりを、仕立てる。</strong><b>↗</b></span></a>
       
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 04 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 04 — 06</p>
     </section>
     <section id="service-5" class="chapter scene scene-5" aria-labelledby="title-5" style="--photo-position:78% center">
       <img class="scene-photo" src="assets/living-room.jpg" alt="自然光と木の質感が心地よい住宅内装のイメージ" loading="lazy" draggable="false">
@@ -88,11 +98,11 @@
         <h2 class="scene-heading" id="title-5"><span>LESS</span><span>NOISE.</span><span>MORE LIFE.</span></h2>
         <p class="scene-jp">静けさも、<br>空間の品質。</p>
         <p class="scene-desc">聞きたい音と、抑えたい音。<br>使い方に合わせた、音との付き合い方。</p>
-        <button class="detail scene-detail" data-service="4">防音工事について <span>↗</span></button>
+        <a class="detail scene-detail" href="services/acoustic.html">防音工事について <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="4"><span class="target"></span><span class="point-label"><small>COMFORT / ACOUSTIC</small><strong>心地よい静けさを。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/acoustic.html"><span class="target"></span><span class="point-label"><small>COMFORT / ACOUSTIC</small><strong>心地よい静けさを。</strong><b>↗</b></span></a>
       
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 05 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 05 — 06</p>
     </section>
     <section id="service-6" class="chapter scene scene-6" aria-labelledby="title-6" style="--photo-position:65% center">
       <img class="scene-photo" src="assets/tatami.jpg" alt="木と畳、ふすまが調和する明るい和室のイメージ" loading="lazy" draggable="false">
@@ -102,11 +112,11 @@
         <h2 class="scene-heading" id="title-6"><span>JAPANESE</span><span>CALM.</span><span>MODERN LIFE.</span></h2>
         <p class="scene-jp">和の心地よさを、<br>いまの暮らしに。</p>
         <p class="scene-desc">畳のやさしさ、ふすまの美しさ。<br>毎日に寄り添う、和の仕上げ。</p>
-        <button class="detail scene-detail" data-service="5">畳・ふすまの工事について <span>↗</span></button>
+        <a class="detail scene-detail" href="services/tatami.html">畳・ふすまの工事について <span>↗</span></a>
       </div>
-      <button class="scene-point" data-service="5"><span class="target"></span><span class="point-label"><small>TATAMI / FUSUMA</small><strong>受け継ぐ質感、新しい表情。</strong><b>↗</b></span></button>
+      <a class="scene-point" href="services/tatami.html"><span class="target"></span><span class="point-label"><small>TATAMI / FUSUMA</small><strong>受け継ぐ質感、新しい表情。</strong><b>↗</b></span></a>
       
-      <p class="scene-footnote">SORANOWA INTERIOR <span>/</span> 06 — 06</p>
+      <p class="scene-footnote">ONEBE INTERIOR <span>/</span> 06 — 06</p>
     </section>
   </main>
   <footer class="deck">
